@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Web Dev Generator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- Create a feature that inputs details about a card and dynamically pushes it, into the playlist -->
+    <!-- 
+        My button who uses function() to add card to playlist
+        
+        Enter Title of vid
+        ViewCount and convert them into K, M..
+        Months Old
+        Length String : 31:20
+        Img URL
+        
+        Kinda Like an advanced To-do list
+        
+        Let's start by making a simple one Eh
+    -->
+
+    <section class="main">
+        <div class="complete-form">
+            <label for="vid-title">
+                <div class="form-title">Video Title:</div>
+                <input type="text" name="card" id="vid-title" class="text-input">
+            </label>
+            <label for="view-count">
+                <div class="form-title">View Count:</div>
+                <input type="text" name="card" id="view-count" class="text-input">
+            </label>
+            <label for="months-old">
+                <div class="form-title">How many months old:</div>
+                <input type="text" name="card" id="months-old" class="text-input">
+            </label>
+            <label for="time-length">
+                <div class="form-title">Length in mm:ss:</div>
+                <input type="text" name="card" id="time-length" class="text-input">
+            </label>
+            <label for="img-url">
+                <div class="form-title">Image URL:</div>
+                <input type="text" name="card" id="img-url" class="text-input" placeholder="Optional">
+            </label>
+            <div class="pushme">
+                <button name="card" onclick="createcard()">Create</button>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <!-- <div class="onecard">
+                <div class="indexing">1</div>
+                <div class="img-time">
+                    <img src="/JavaScript/0.Exercise/7.YTPlaylistAdder/sigmaimg.webp" alt="thumbnail" class="thumbnail">
+                    <div class="time-div">31:20</div>
+                </div>
+
+                <div class="play-text">
+                    <div class="play-title">
+                        Installing VS Code
+                    </div>
+                    <ul class="play-desc">
+                        <li style="list-style-type: none;">CodeWithHarry</li>
+                        <li>727K views</li>
+                        <li>2 Months Ago</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+
+
+    </section>
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>
